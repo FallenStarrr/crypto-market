@@ -21,7 +21,7 @@ export default function AppHeader() {
     const [select, setSelect] = useState(false)
     const [coin, setCoin] = useState(null)
     const [modal, setModal] = useState(false)
-    const [drawer, setDrawer] = useState(false)
+    const [drawer, setDrawer] = useState(true)
 
   
     useEffect(() => {
@@ -75,6 +75,7 @@ export default function AppHeader() {
       </Modal>
 
       <Drawer
+      destroyOnClose
       width={600}
       title="Add Asset" 
       onClose={() => setDrawer(false)} 
