@@ -1,4 +1,5 @@
 import { createContext } from "react";
+import { useContext } from "react";
 import { useEffect, useState } from 'react';
 import {fakeFetchCrypto, fetchAssets} from '../api'
 import {percentDifference} from '../utils'
@@ -49,4 +50,11 @@ const CryptoContext  = createContext({
     )
  }
 
+
+
  export default CryptoContext
+
+
+ export function useCrypto() {
+      return useContext(CryptoContext)
+ }
