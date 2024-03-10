@@ -1,6 +1,8 @@
 import { Layout } from 'antd';
 import Typography from 'antd/es/typography/Typography';
 import { useCrypto } from '../../context/crypto-context';
+import AssetsTable from '../AssetsTable';
+import PortfolioChart from '../PortfolioChart';
 
 
 
@@ -33,6 +35,8 @@ export default function AppContent() {
                         .reduce((acc, v) => acc += v ,0)
                         .toFixed(2)}$
             </Typography.Title>
+            <PortfolioChart/>
+            <AssetsTable/>
         </Layout.Content>
     )
 }
