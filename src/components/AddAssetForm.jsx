@@ -147,7 +147,7 @@ export default function AddAssetForm({ onClose }) {
       name="price"   
     >
      <InputNumber 
-     disabled 
+     
      style={{width: '100%'}}
      onChange={handlePrice}
      />
